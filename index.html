@@ -440,7 +440,7 @@
                     specs: 'Bảo hành: 12 Tháng Bộ nhớ lưu trữ: SSD Msata 128G Ram: 8G Chíp xử lý: Intel® Core™ i5-3210M 3M bộ nhớ đệm, tối đa 3,10 GHz Màn Hình: Cảm ứng 15.6 inch độ phân giải ( 1366 x 768 ) Điện áp sử dụng: 12V-5A Hệ điều hành : Window 10 Tương thích phần mềm: CUKCUK, Kiotviet, Ocha, POS365, POSAPP, Sapo…'
                     })">
                     <img src="https://static.tendoo.vn/finan-prd/cd73a06a-99c6-49dd-adf4-677b88dec256/image/26dd1255-bc88-4e3a-ad33-fe0f4b9c5d36.png">
-                    <div style="font-size:0.85rem; font-weight:bold; margin-top:10px;">Máy POS V201 1 màn hình</div>
+                    <div style="font-size:0.85rem; font-weight:bold; margin-top:10px;">Máy CPOS V201 1 màn hình</div>
                     <div style="color:var(--primary); font-weight:800;">6.850.000đ</div>
                 </div>
                 <div class="pos-item" onclick="openPos({
@@ -453,7 +453,7 @@
                     specs: 'Bảo hành: 12 Tháng Bộ nhớ lưu trữ: SSD Msata 128G Ram: 8G Chíp xử lý: Intel® Core™ i5-3210M 3M bộ nhớ đệm, tối đa 3,10 GHz Màn Hình:2 Màn cảm ứng 15.6 inch độ phân giải ( 1366 x 768 ) Điện áp sử dụng: 12V-5A Hệ điều hành : Window 10 Tương thích phần mềm: CUKCUK, Kiotviet, Ocha, POS365, POSAPP, Sapo…'
                     })">
                     <img src="https://static.tendoo.vn/finan-prd/cd73a06a-99c6-49dd-adf4-677b88dec256/image/29d1c90e-5120-41ff-b8f7-6e5b0c273231.png">
-                    <div style="font-size:0.85rem; font-weight:bold; margin-top:10px;">Máy POS V202 2 màn hình</div>
+                    <div style="font-size:0.85rem; font-weight:bold; margin-top:10px;">Máy CPOS V202 2 màn hình</div>
                     <div style="color:var(--primary); font-weight:800;">7.850.000đ</div>
                 </div>
                 <div class="pos-item" onclick="openPos({
@@ -466,7 +466,7 @@
                     specs: 'Bảo hành: 12 Tháng Bộ nhớ lưu trữ: SSD Msata 128G Ram: 8G Chíp xử lý:Intel® Core™ i5 – 4Th ( Thế hệ 4 ) Màn Hình:Màn hình cảm ứng 15.6 inch độ phân giải FHD ( 1980 x 1080 ) Điện áp sử dụng:12V-5A Hệ điều hành :Window 10 Tương thích phần mềm:CUKCUK, Kiotviet, Ocha, POS365, POSAPP, Sapo…'
                     })">
                     <img src="https://static.tendoo.vn/finan-prd/cd73a06a-99c6-49dd-adf4-677b88dec256/image/1baa780b-4617-4e9e-a890-871bff5be6b4.png">
-                    <div style="font-size:0.85rem; font-weight:bold; margin-top:10px;">Máy POS V301 (New 2025)</div>
+                    <div style="font-size:0.85rem; font-weight:bold; margin-top:10px;">Máy CPOS V301 (New 2025)</div>
                     <div style="color:var(--primary); font-weight:800;">7.950.000đ</div>
                 </div>
                 <div class="pos-item" onclick="openPos({
@@ -478,7 +478,7 @@
                     specs: 'Bảo hành:12 Tháng Bộ nhớ lưu trữ:SSD Msata 128GRam:8G Chíp xử lý:Intel® Core™ i5 – 4Th ( Thế hệ 4 ) Màn Hình:Màn hình chính cảm ứng 15.6 inch độ phân giải FHD ( 1980 x 1080 ) Màn hình phụ 11.6 inch Điện áp sử dụng:12V-5A Hệ điều hành :Window 10 Tương thích phần mềm:CUKCUK, Kiotviet, Ocha, POS365, POSAPP, Sapo…'
                     })">
                     <img src="https://static.tendoo.vn/finan-prd/cd73a06a-99c6-49dd-adf4-677b88dec256/image/672e6222-511d-4ab8-a21c-ccac69452c63.png">
-                    <div style="font-size:0.85rem; font-weight:bold; margin-top:10px;">Máy POS V302 2 màn hình</div>
+                    <div style="font-size:0.85rem; font-weight:bold; margin-top:10px;">Máy CPOS V302 2 màn hình</div>
                     <div style="color:var(--primary); font-weight:800;">9.150.000đ</div>
                 </div>
                 <div class="pos-item" onclick="openPos({
@@ -1572,7 +1572,9 @@ window.onclick = function(event) {
     function sendOrderZalo() {
     const phone = "0868838242";
     const zaloUrl = "https://zalo.me/" + phone;
-    window.location.href = zaloUrl;
+    setTimeout(function() {
+    window.location.assign(zaloUrl);
+    }, 100);
 }
 </script>
 <div id="order_notif" class="order-notification">
